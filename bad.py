@@ -25,7 +25,6 @@ class Calculator:
        return dividend % divisor
 
 
-
    def remainder(self,dividend, divisor):
        #gets remainder using remainder calcuations function
        return self.remianderCalculations(dividend, divisor)
@@ -50,6 +49,44 @@ class Calculator:
 #what does main even do
 def main(): #this is main
    calculator = Calculator()
-
+   while True:
+       print("What would you like? (add, subtract, multiply, divide, off)")
+       a = input()
+       if a == "add":#user input
+           #ask user to provide the 1st number they would like to add
+           print("add number")
+           operand_1 = float(input())
+           # ask user to provide the 1st number they would like to add
+           print("add number")
+           operand_2 = float(input())
+           print(calculator.add(operand_1, operand_2))
+       elif a == "subtract":#user input
+           #ask user to provide the 1st number they would like to subtract
+           print("Provide number ")
+           operand_1 = float(input())
+           # ask user to provide the 2nd number they would like to subtract
+           print("Provide another number ")
+           operand_2 = float(input())
+           print(calculator.subtract(operand_1, operand_2))
+       elif a == "remainder":#user input
+           #Ask user to Provide the 1st number they would like to multiply
+           print("Provide number ")
+           operand_1 = float(input())
+           # Ask user to Provide the 1st number they would like to multiply
+           print("Provide number ")
+           operand_2 = float(input())
+           print(calculator.remainder(operand_1, operand_2))
+       elif a == "divide": #user input
+           #have user provide dividen
+           print("Provide the number: ")
+           operand_1 = float(input())
+           # have user provide divider
+           print("Provide the number: ")
+           operand_2 = float(input())
+           print(calculator.divide(operand_1, operand_2))
+       elif a == "off":#user input
+           print("Turning off the calculator")
+           break
+main()
 
 main()
