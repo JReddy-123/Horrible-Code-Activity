@@ -40,13 +40,14 @@ def main():
            operand_2 = float(input())
            print(calculator.multiply(operand_1, operand_2))
        elif user_input == "divide":
-           print("Provide the dividend: ")
+           print("Provide the dividend: ") # The number being divided
            operand_1 = float(input())
-           print("Provide the divisor: ")
+           print("Provide the divisor: ") # The number to divide by
            operand_2 = float(input())
            print(calculator.divide(operand_1, operand_2))
        elif user_input == "off":
            print("Turning off the calculator")
-           break
+           break # Exits while loop so that program can terminate
+
 
 main()
