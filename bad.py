@@ -88,5 +88,3 @@ def main(): #this is main
            print("Turning off the calculator")
            break
 main()
-
-main()
